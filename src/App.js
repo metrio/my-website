@@ -1,28 +1,64 @@
 import './App.css'
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import NavBar from './Containers/NavBar'
 import { Route, Switch } from 'react-router-dom'
+import { TweenMax, Power3, TimelineLite } from 'gsap'
 
-class App extends React.Component {
+function App()  {
 
-  render () {
+  let logoItem = useRef(null)
+
+  useEffect( () => {
+    console.log(logoItem)
+  }, [] )
+  
+
+
     return(
-      <body>
+      <div>
         <main className="App">
+
           <section className="landing">
-            <h1 id="logo">Afloat</h1>
+            <nav>
+              <h1 id="logo">Demetrio</h1>
+              <NavBar />
+            </nav>
+            
           </section>
 
-          <h1>Former Pastry Cook</h1>
-          <h1>Into</h1>
-          <h1>Up and Coming Software Engineer || Web Developer</h1>
         </main>
-        <NavBar />
+        <div className="intro" ref={ el => { logoItem = el } }>
+          <div className="intro-text"> 
+            <h1 className="hide">
+              <span className="text">
+                Former Pastry Cook
+              </span>
+            </h1>
+            <h1 className="hide">
+              <span className="text">
+                Into
+              </span>
+            </h1>
+            <h1 className="hide">
+              <span className="text">
+                Software Engineer
+              </span>
+            </h1>
+            <h1 className="hide">
+              <span className="text">
+                Web Developer
+              </span>
+            </h1>
+          </div>
+        </div>
+        <div className="slider"></div>
+
+
         <Switch >
         
           <Route path="/about" render={() => {
             return(
-             <h1>about</h1> 
+             <h1>About</h1> 
             )
           }}/>
           <Route path="/experience" render={() => {
@@ -37,12 +73,11 @@ class App extends React.Component {
           }}/>
           <Route path="/" />
         </Switch>
-      </body>
+      </div>
       
 
 
     )
-  }
 }
 
 
