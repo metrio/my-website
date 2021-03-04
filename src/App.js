@@ -2,32 +2,34 @@ import './App.css'
 import React, { useRef, useEffect } from 'react'
 import NavBar from './Containers/NavBar'
 import { Route, Switch } from 'react-router-dom'
-import { TweenMax, Power3, TimelineLite } from 'gsap'
+import { TimelineMax } from 'gsap'
+
 
 function App()  {
-
-  let logoItem = useRef(null)
+  let sliderItem = useRef(null)
 
   useEffect( () => {
-    console.log(logoItem)
+    const tl = new TimelineMax( { defaults: { ease: 'power1.out'} } )
+    
+    tl.to('.text', { y: '0%', duration: 1, stagger: 0.25 })
+    tl.to(sliderItem, { y: '-100%', duration: 1.5 , delay: 0.5})
+    tl.to('.intro', {y: "-100%", duration: 1}, '-=1')
+    tl.fromTo('nav', {opacity: 0}, { opacity: 1, duration: 1 }, '-=1')
   }, [] )
   
 
-
     return(
-      <div>
-        <main className="App">
-
+      <>
+        <main>
           <section className="landing">
             <nav>
               <h1 id="logo">Demetrio</h1>
               <NavBar />
             </nav>
-            
           </section>
 
         </main>
-        <div className="intro" ref={ el => { logoItem = el } }>
+        <div className="intro">
           <div className="intro-text"> 
             <h1 className="hide">
               <span className="text">
@@ -36,22 +38,22 @@ function App()  {
             </h1>
             <h1 className="hide">
               <span className="text">
-                Into
+                Turned
               </span>
             </h1>
             <h1 className="hide">
               <span className="text">
-                Software Engineer
+                ...
               </span>
             </h1>
-            <h1 className="hide">
+            {/* <h1 className="hide">
               <span className="text">
                 Web Developer
               </span>
-            </h1>
+            </h1> */}
           </div>
         </div>
-        <div className="slider"></div>
+        <div className="slider" ref={el => { sliderItem = el }}></div>
 
 
         <Switch >
@@ -73,7 +75,7 @@ function App()  {
           }}/>
           <Route path="/" />
         </Switch>
-      </div>
+      </>
       
 
 

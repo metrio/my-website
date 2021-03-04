@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #logo {
   font-family: 'Oxygen', sans-serif;
   font-weight: lighter;
@@ -8,24 +14,24 @@
   min-height: 100vh;
   background-size: cover;
   padding: 0rem 5rem;
-
 }
 
 nav {
   display: flex;
   justify-items: center;
   justify-content: space-between;
-  min-height: 10vh;
 }
 
 .nav-bar {
   display: flex;
   list-style: none;
+  text-decoration: none;
 }
 
-.nav-bar {
-  padding: 10rem;
+.nav-bar li {
+  padding: 4rem;
   font-size: 1.2rem;
+  height: max-content;
 }
 
 .intro {
@@ -43,11 +49,11 @@ nav {
 .intro-text {
   color: rgb(233, 233, 233);
   font-family: "Heebo", sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .slider {
-  background: rgb(97, 105, 109);
+  background: rgb(206, 215, 219);
   position: fixed;
   top: 0;
   left: 0;
@@ -55,7 +61,6 @@ nav {
   height: 100%;
   transform: translateY(100%);
 }
-
 
 .hide{ 
   background: black;

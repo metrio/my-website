@@ -5,16 +5,16 @@ const NavBar = () => {
     return(
         <ul className="nav-bar">
 
-            <NavLink to="/">
+            <NavLink to="/" style={{ color: 'inherit', textDecoration: 'inherit'}}>
                 <li>Home</li>
             </NavLink>
-            <NavLink to="/about">
+            <NavLink to="/about" style={{ color: 'inherit', textDecoration: 'inherit'}}>
                 <li>About</li>
             </NavLink>
-            <NavLink to="/experience">
+            <NavLink to="/experience" style={{ color: 'inherit', textDecoration: 'inherit'}}>
                 <li>Experience</li>
             </NavLink>
-            <NavLink to="/contact">
+            <NavLink to="/contact" style={{ color: 'inherit', textDecoration: 'inherit'}}>
                 <li>Contact</li>
             </NavLink>
            
