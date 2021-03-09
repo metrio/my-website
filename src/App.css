@@ -15,6 +15,10 @@
   background-size: cover;
   padding: 0rem 5rem;
 }
+.landing img{
+  width: 20vw;
+  height: auto;
+}
 
 nav {
   display: flex;
