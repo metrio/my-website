@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+#root{
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(218,186,131,1) 17%, rgba(255,255,255,1) 100%);
+}
+
 #logo {
   font-family: 'Oxygen', sans-serif;
   font-weight: lighter;
@@ -12,12 +16,13 @@
 
 .landing { 
   min-height: 100vh;
-  background-size: cover;
+  display: flex;
   padding: 0rem 5rem;
 }
+
 .landing img{
-  width: 20vw;
-  height: auto;
+  width: 35vw;
+  height: fit-content;
 }
 
 nav {

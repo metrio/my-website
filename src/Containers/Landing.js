@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import { TimelineMax } from 'gsap'
 import personal_pic from '../Assets/personal_pic.png'
-import NavBar from '../Containers/NavBar'
+import LandingProfile from '../Components/LandingProfile'
 
 
 function Landing() {
@@ -22,7 +22,8 @@ function Landing() {
           <section className="landing">
             <img src={personal_pic} alt="profile"/>
 
-            <p>Full Stack Software Engineer</p>
+            <LandingProfile />
+
           
           </section>
 
@@ -44,11 +45,6 @@ function Landing() {
                 ...
               </span>
             </h1>
-            {/* <h1 className="hide">
-              <span className="text">
-                Web Developer
-              </span>
-            </h1> */}
           </div>
         </div>
         <div className="slider" ref={el => { sliderItem = el }}></div>

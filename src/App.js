@@ -1,5 +1,5 @@
 import './App.css'
-import React, { useRef, useEffect } from 'react'
+import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Landing from './Containers/Landing'
 import Contact from './Containers/Contact'
