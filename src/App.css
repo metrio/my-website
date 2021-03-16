@@ -6,16 +6,22 @@
 
 #root{
   background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(218,186,131,1) 17%, rgba(255,255,255,1) 100%);
+  font-family: 'Teko', sans-serif;
+}
+
+#App{
+  min-height: 100vh;
 }
 
 #logo {
-  font-family: 'Oxygen', sans-serif;
   font-weight: lighter;
   font-size: 2rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
 }
 
 .landing { 
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   padding: 0rem 5rem;
 }
@@ -39,7 +45,7 @@ nav {
 
 .nav-bar li {
   padding: 4rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   height: max-content;
 }
 
@@ -57,12 +63,14 @@ nav {
 
 .intro-text {
   color: rgb(233, 233, 233);
-  font-family: "Heebo", sans-serif;
-  font-size: 2rem;
+  font-family: 'Teko', sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  padding: 1rem;
 }
 
 .slider {
-  background: rgb(206, 215, 219);
+  background: rgb(170, 154, 130);
   position: fixed;
   top: 0;
   left: 0;
@@ -87,6 +95,7 @@ nav {
   text-align: center;
   margin-top: 3em;
   font-size: 1.75rem;
+  font-family: 'Montserrat', sans-serif;
   padding: 4rem 7rem;
   position: relative;
   height: 50%;
@@ -94,5 +103,9 @@ nav {
 }
 
 .landing-animation{
-  font-size: 3.5rem;
+  font-size: 4.5rem;
+}
+
+#AboutMe{
+  font-size: 2rem;
 }

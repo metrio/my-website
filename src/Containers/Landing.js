@@ -29,17 +29,17 @@ function Landing() {
           <div className="intro-text"> 
             <h1 className="hide">
               <span className="text">
-                Former Pastry Cook
+                Looking for
               </span>
             </h1>
             <h1 className="hide">
               <span className="text">
-                Turned
+                Your Next
               </span>
             </h1>
             <h1 className="hide">
               <span className="text">
-                ...
+                Software Engineer?
               </span>
             </h1>
           </div>

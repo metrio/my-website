@@ -3,7 +3,7 @@ import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Landing from './Containers/Landing'
 import Contact from './Containers/Contact'
-import Timeline from './Components/Timeline'
+import Projects from './Components/Projects'
 import About from './Components/About'
 import NavBar from './Containers/NavBar'
 
@@ -13,9 +13,9 @@ function App()  {
 
   
     return(
-      <>
+      <section id="App">
          <nav>
-              <h1 id="logo">Demetrio</h1>
+              <h1 id="logo">DL</h1>
               <NavBar />
           </nav>
 
@@ -26,9 +26,9 @@ function App()  {
              <About />
             )
           }}/>
-          <Route path="/experience" render={() => {
+          <Route path="/projects" render={() => {
             return(
-             <Timeline />
+             <Projects />
             )
           }}/>
           <Route path="/contact" render={() => {
@@ -42,7 +42,7 @@ function App()  {
             )
           }}/>
         </Switch>
-      </>
+      </section>
       
 
 
