@@ -21,10 +21,7 @@ function Landing() {
         <main>
           <section className="landing">
             <img src={personal_pic} alt="profile"/>
-
-            <LandingProfile />
-
-          
+            <LandingProfile />          
           </section>
 
         </main>

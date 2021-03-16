@@ -80,3 +80,19 @@ nav {
   transform: translateY(100%);
   display: inline-block;
 }
+
+.landing-profile{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3em;
+  font-size: 1.75rem;
+  padding: 4rem 7rem;
+  position: relative;
+  height: 50%;
+  width: 100%
+}
+
+.landing-animation{
+  font-size: 3.5rem;
+}

@@ -6,7 +6,6 @@ gsap.registerPlugin(TextPlugin)
 
 function LandingProfile() {
     
-
     useEffect( () => {
         aboutMeAnimation()
 
@@ -22,8 +21,9 @@ function LandingProfile() {
             'Demetrio Lima.',
             'a software engineer.',
             'a self starter.',
-            'a pastry cook.',
-            'a web developer.'
+            'a web developer.',
+            'a recent bootcamp grad.',
+            'a cook.'
         ]
 
         boxTl.to(".box", {duration: 1, width:"17vw", delay: 0.5, ease: "power4.inOut"}) 
@@ -40,13 +40,14 @@ function LandingProfile() {
 
     return(
         <div className="landing-profile">
-            Hi, I'm 
-            <h4>
+            <h1><span>Hi, I'm </span></h1>
+
+            <h1 className="landing-animation">
                 <span className="box"></span>
                 <span className="about"></span> 
                 <span className="cursor">_</span>
-            </h4>
-            <p></p>
+            </h1>
+
         </div>
     )
 }
