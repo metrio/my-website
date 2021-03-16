@@ -1,43 +1,52 @@
 import React, { useEffect } from 'react'
-import { gsap } from 'gsap'
-import { TextPlugin } from 'gsap/TextPlugin'
-gsap.registerPlugin(TextPlugin)
+import { gsap} from 'gsap'
+import { TextPlugin } from 'gsap/all'
 
-const about = [
-    'Demetrio Lima',
-    'a software engineer',
-    'a self starter ',
-    'a pastry cook',
-    'a web developer'
-]
+gsap.registerPlugin(TextPlugin)
 
 function LandingProfile() {
     
 
     useEffect( () => {
-        
-        gsap.to("#about", 
-        {delay: 1, repeatDelay: 4, speed: 2, text: {value: about[0], delimiter: ''}} 
-        )
-        gsap.to("#about", 
-        {delay: 2,  repeatDelay: 4, speed: 2, text: {value: about[1], delimiter: ''}} 
-        )
-        gsap.to("#about", 
-        {delay: 3, repeatDelay: 4, speed: 2, text: {value: about[2], delimiter: ''}} 
-        )
-        gsap.to("#about", 
-        {delay: 4, repeatDelay: 4, speed: 2, text: {value: about[3], delimiter: ''}} 
-        )
-        gsap.to("#about", 
-        {delay: 5, repeatDelay: 4, speed: 2, text: {value: about[4], delimiter: ''}} 
-        )
+        aboutMeAnimation()
+
+        return () => aboutMeAnimation()
     }, [])
+
+    const aboutMeAnimation = () => {
+        let cursor = gsap.to(".cursor", {opacity: 0, ease: 'power2.inOut', repeat: -1})
+        let mainTl = gsap.timeline({repeat: -1}).pause()
+        let boxTl = gsap.timeline()
+
+        const about = [
+            'Demetrio Lima.',
+            'a software engineer.',
+            'a self starter.',
+            'a pastry cook.',
+            'a web developer.'
+        ]
+
+        boxTl.to(".box", {duration: 1, width:"17vw", delay: 0.5, ease: "power4.inOut"}) 
+            .to(".box", {duration:1, height:"7vw", ease: "elastic.out", onComplete: () => mainTl.play() })
+            .to(".box", {duration:2, autoAlpha: 0.7, yoyo: true, repeat: -1, ease: "rough({ template: none.out, strength:  1, points: 20, taper: 'none', randomize: true, clamp: false})"})
+        
+       let phrasePrint = about.forEach(phrase => {
+            let tl = gsap.timeline({repeat: 1, yoyo: true, repeatDelay: 1})
+            tl.to(".about", {duration: 1, text: phrase})
+            mainTl.add(tl)
+        })
+    }
 
 
     return(
         <div className="landing-profile">
             Hi, I'm 
-            <h4 id="about"></h4>
+            <h4>
+                <span className="box"></span>
+                <span className="about"></span> 
+                <span className="cursor">_</span>
+            </h4>
+            <p></p>
         </div>
     )
 }
