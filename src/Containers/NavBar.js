@@ -14,7 +14,7 @@ const NavBar = () => {
             <NavLink to="/about" style={{ color: 'inherit', textDecoration: 'inherit'}}>
                 <li>About</li>
             </NavLink>
-            <NavLink to="/experience" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+            <NavLink to="/projects" style={{ color: 'inherit', textDecoration: 'inherit'}}>
                 <li>Projects</li>
             </NavLink>
             <NavLink to="/contact" style={{ color: 'inherit', textDecoration: 'inherit'}}>

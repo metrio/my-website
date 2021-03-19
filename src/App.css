@@ -108,4 +108,10 @@ nav {
 
 #AboutMe{
   font-size: 2rem;
+  display: inline-block;
+}
+
+#AboutMe img{
+  height: 40vh;
+  width: auto;
 }
