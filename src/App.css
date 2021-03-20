@@ -108,10 +108,34 @@ nav {
 
 #AboutMe{
   font-size: 2rem;
-  display: inline-block;
+  display: flex;
 }
 
 #AboutMe img{
   height: 40vh;
   width: auto;
+  margin-left: .5em;
 }
+
+.description{
+  display: inline-table;
+  justify-content: space-around;
+}
+
+.description p {
+  margin: 0 1.5em 3em;
+}
+
+#footer{
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 5vh;
+  bottom: 0;
+}
+
+#footer a{
+  margin: 1em;
+}
+
+
