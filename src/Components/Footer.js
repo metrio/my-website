@@ -8,8 +8,8 @@ import Vimeo from "../Assets/png/vimeo.png";
 const Footer = () => {
   return (
     <footer>
-        <p>&copy;Demetrio Lima</p>
-        
+        <p>&copy;Demetrio Lima 2021</p>
+
       <section className="link-icons">
         <a href="https://www.linkedin.com/in/demetrioalima/">
           <img src={LinkedIn} alt="LinkedIn" width="20px" height="20px" />

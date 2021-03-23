@@ -38,15 +38,16 @@ nav {
 }
 
 .nav-bar {
-  display: flex;
+  margin-top: 2em;
+  display: inline-flex;
   list-style: none;
   text-decoration: none;
 }
 
 .nav-bar li {
-  padding: 4rem;
+  margin-right: 2em;
+  margin-left: 2em;
   font-size: 1.5rem;
-  height: max-content;
 }
 
 .intro {
@@ -129,23 +130,36 @@ nav {
 #contact {
   justify-content: center;
   align-items: center;
-  display: flex;
 }
 
 footer{
-  display: list-item;
-  position: relative;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  align-content: center;
-  height: 7vh;
-  bottom: -10vh;
+  justify-content: center;
+  max-height: fit-content;
+  position: absolute;
+  width: 100%;
+  bottom: 2.5vh;
 }
 
+.link-icons {
+  height: 6vh;
+  align-content: center;
+}
 
 .link-icons a{
-  display: inline-block;
-  margin-left: 2em;
+  background-color: rgba(255,255,255, .8);
+  padding: .6em;
+  border: 2.7px solid rgba(0,0,0,1);
+  border-radius: 50%;
+  margin: 1em;
 }
+
+.link-icons a img{
+  position: relative;
+  top: .8vh
+}
+
 
 
