@@ -1,8 +1,15 @@
 import React from 'react'
+import Footer from '../Components/Footer'
+
 
 function Contact() {
     return(
-        <h1>Want to talk? Need a Mentor? Need a teammate?</h1>
+        <section className="contact">
+            <h1>Want to talk? Need a Mentor? Need a teammate?</h1>
+            
+            <Footer />
+        </section>
+        
     )
 }
 

@@ -28,7 +28,6 @@ function LandingProfile() {
 
         boxTl.to(".box", {duration: 1, width:"17vw", delay: 0.5, ease: "power4.inOut"}) 
             .to(".box", {duration:1, height:"7vw", ease: "elastic.out", onComplete: () => mainTl.play() })
-            .to(".box", {duration:2, autoAlpha: 0.7, yoyo: true, repeat: -1, ease: "rough({ template: none.out, strength:  1, points: 20, taper: 'none', randomize: true, clamp: false})"})
         
        let phrasePrint = about.forEach(phrase => {
             let tl = gsap.timeline({repeat: 1, yoyo: true, repeatDelay: 1})

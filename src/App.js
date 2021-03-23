@@ -6,19 +6,13 @@ import Contact from './Containers/Contact'
 import Projects from './Components/Projects'
 import About from './Components/About'
 import NavBar from './Containers/NavBar'
-import Footer from './Components/Footer'
-
 
 
 function App()  {
 
-  const test = "How to pass info"
-
-
     return(
       <section id="App">
 
-        
          <nav>
               <h1 id="logo">DL</h1>
               <NavBar />
@@ -28,7 +22,7 @@ function App()  {
         
           <Route path="/about" render={() => {
             return(
-             <About tester={test} />
+             <About />
             )
           }}/>
           <Route path="/projects" render={() => {
@@ -46,8 +40,9 @@ function App()  {
               <Landing />
             )
           }}/>
+
         </Switch>
-        <Footer />
+        
       </section>
       
 

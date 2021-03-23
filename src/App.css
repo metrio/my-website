@@ -126,16 +126,26 @@ nav {
   margin: 0 1.5em 3em;
 }
 
-#footer{
-  display: flex;
-  position: relative;
+#contact {
+  justify-content: center;
   align-items: center;
-  height: 5vh;
-  bottom: 0;
+  display: flex;
 }
 
-#footer a{
-  margin: 1em;
+footer{
+  display: list-item;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 7vh;
+  bottom: -10vh;
+}
+
+
+.link-icons a{
+  display: inline-block;
+  margin-left: 2em;
 }
 
 
