@@ -114,7 +114,7 @@ nav {
   display: flex;
 }
 
-#AboutMe img{
+#profilepic{
   height: 40vh;
   width: auto;
   margin-left: .5em;
@@ -126,7 +126,7 @@ nav {
 }
 
 .description p {
-  margin: 0 1.5em 3em;
+  margin: 0 1.5em 1em;
 }
 
 #contact {
@@ -163,11 +163,18 @@ footer{
   top: .8vh
 }
 
-
+.tech-logos{
+  align-items: center;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
 .tech-logos img{
   height: 6vh;
-
+  margin: 1em;
+  filter: sepia(15%);
 }
 
 
