@@ -23,20 +23,20 @@ function About() {
                     <p>
                         When I'm not immersed in code,  you can find me biking around the city, staking out the best finds at the local NYC markets, and attempting to master the perfect al pastor tacos. 
                         I also love playing video and board games, live music, and spending time with the best tortieshell kitten, Anise.
-                    </p>    
+                    </p> 
+                    <div className="tech-logos">
+                        <img src={JavascriptLogo} alt="JS Logo"/>
+                        <img src={Ruby} alt="Ruby Logo"/>
+                        <img src={CPP} alt="C++ Logo"/>
+                        <img src={CSS} alt="CSS Logo"/>
+                        <img src={HTMLLogo} alt="HTML Logo"/>
+                        <img src={SQL} alt="SQL Logo"/>    
+                        <img src={ReactLogo} alt="React logo"/>
+                        <img src={Rails} alt="Rails logo"/>
+                        <img src={Greensock} alt="GSAP logo"/>
+                    </div>   
                 </div>
             </main>
-            <div className="tech-logos">
-                    <img src={JavascriptLogo} alt="JS Logo"/>
-                    <img src={Ruby} alt="Ruby Logo"/>
-                    <img src={CPP} alt="C++ Logo"/>
-                    <img src={CSS} alt="CSS Logo"/>
-                    <img src={HTMLLogo} alt="HTML Logo"/>
-                    <img src={SQL} alt="SQL Logo"/>    
-                    <img src={ReactLogo} alt="React logo"/>
-                    <img src={Rails} alt="Rails logo"/>
-                    <img src={Greensock} alt="GSAP logo"/>
-             </div>
         </section>
     )
 
