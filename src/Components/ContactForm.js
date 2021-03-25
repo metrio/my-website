@@ -1,44 +1,58 @@
 import React,{ useState }  from 'react'
-import axios from 'axios'
-import PropTypes from "prop-types"
+import * as emailjs from 'emailjs-com'
 
-
-const ContactForm = (props) => {
+const ContactForm = () => {
 
     const [ sent, setSent ] = useState(false)
-    const [ error, setError ] = useState(null)
-    const [ formData, setFormData ] = useState({})
+    const [ formData, setFormData ] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+    })
 
     const handleEmailChange = (e) => {
         setFormData({
-            ...formData,
-            [e.target.name]: e.target.value,
+            [e.target.name]: e.target.value
         })
     }
 
     const emailSubmit = (e) => {
         e.preventDefault()
-        console.log(formData)
+
+        let templateParams = {
+            from_name: formData.name,
+            from_email: formData.email,
+            subject: formData.subject,
+            message: formData.message
+        }
+
+        emailjs.send(`${process.env.REACT_APP_SERVICE_ID}`, `${process.env.REACT_APP_TEMPLATE_ID}`, templateParams, `${process.env.REACT_APP_EMAILJS_USER_KEY}`)
+        .then((result) => {
+            console.log(result.text)
+        }, (error) => {
+            console.log(error.text)
+        })
     }
     
     return (
-        <form className="contact-form" onSubmit={ (e) => emailSubmit(e)}>
+        <form className="contact-form" onSubmit={(e) => emailSubmit(e)}>
 
-            <label className="message-name" >Your Name</label>
-            <input onChange={ (e) => handleEmailChange(e) } name="name" type="text" placeholder="Your Name" value={formData.name}/>
+            <label>Your Name</label>
+            <input onChange={(e) => handleEmailChange(e)} name="name" type="text" placeholder="Your Name" value={formData.name}/>
 
-            <label className="message-email" >Your Email</label>
-            <input onChange={ (e) => handleEmailChange(e) } name="email"  type="email" placeholder="your@email.com" required value={formData.email} />
+            <label>Your Email</label>
+            <input onChange={(e) => handleEmailChange(e)} name="email"  type="email" placeholder="your@email.com" value={formData.email} required/>
 
-            <label className="message-subject" >Subject of Email</label>
-            <input onChange={ (e) => handleEmailChange(e) } name="subject" type="text" placeholder="Subject" value={formData.subject}/>
+            <label>Subject of Email</label>
+            <input onChange={(e) => handleEmailChange(e)} name="subject" type="text" placeholder="Subject" value={formData.subject}/>
 
-            <label className="message" >Your Message</label>
-            <textarea onChange={ (e) => handleEmailChange(e) } name="message"  type="text" placeholder="Please write your message here" value={formData.message} required/>
+            <label>Your Message</label>
+            <textarea onChange={(e) => handleEmailChange(e)} name="message"  type="text-area" placeholder="Please write your message here" value={formData.message} required/>
       
 
         <div className="button--container">
-            <button type="submit">Send Email</button>
+            <button type="submit">Send</button>
         </div>
       </form>
     )
