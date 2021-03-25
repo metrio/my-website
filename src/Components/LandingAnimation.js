@@ -1,10 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import { TimelineMax } from 'gsap'
-import LandingProfile from '../Components/LandingProfile'
-import personal_pic from '../Assets/personal_pic.png'
 
-
-function Landing() {
+function LandingAnimation() {
     let sliderItem = useRef(null)
 
   useEffect( () => {
@@ -42,4 +39,4 @@ function Landing() {
     )
 }
 
-export default Landing
+export default LandingAnimation

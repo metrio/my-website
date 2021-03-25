@@ -1,11 +1,11 @@
 import './App.css'
 import { Route, Switch } from 'react-router-dom'
-import Landing from './Containers/Landing'
+import Landing from './Components/LandingAnimation'
 import Contact from './Containers/Contact'
 import Projects from './Containers/Projects'
 import About from './Components/About'
 import NavBar from './Containers/NavBar'
-import LandingProfile from './Components/LandingProfile'
+import LandingProfile from './Containers/LandingProfile'
 
 function App()  {
   
