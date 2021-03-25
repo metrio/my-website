@@ -1,9 +1,8 @@
 import React,{ useState }  from 'react'
 import * as emailjs from 'emailjs-com'
 
-const ContactForm = () => {
+const ContactForm = (props) => {
 
-    const [ sent, setSent ] = useState(false)
     const [ formData, setFormData ] = useState({
         name: '',
         email: '',
@@ -11,8 +10,14 @@ const ContactForm = () => {
         message: ''
     })
 
+    const hideThisForm = (e) => {
+        props.hideForm()
+    }
+
     const handleEmailChange = (e) => {
+        e.persist()
         setFormData({
+            ...formData,
             [e.target.name]: e.target.value
         })
     }
@@ -21,17 +26,22 @@ const ContactForm = () => {
         e.preventDefault()
 
         let templateParams = {
-            from_name: formData.name,
-            from_email: formData.email,
+            user_name: formData.name,
+            user_email: formData.email,
             subject: formData.subject,
             message: formData.message
         }
 
         emailjs.send(`${process.env.REACT_APP_SERVICE_ID}`, `${process.env.REACT_APP_TEMPLATE_ID}`, templateParams, `${process.env.REACT_APP_EMAILJS_USER_KEY}`)
         .then((result) => {
-            console.log(result.text)
+            Object.keys(formData).map(key => {
+                setFormData({
+                    [key]: ''
+                })
+            })
+            hideThisForm()
         }, (error) => {
-            console.log(error.text)
+            alert(`${error.text}` )
         })
     }
     

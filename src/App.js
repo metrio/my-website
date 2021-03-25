@@ -3,7 +3,7 @@ import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Landing from './Containers/Landing'
 import Contact from './Containers/Contact'
-import Projects from './Components/Projects'
+import Projects from './Containers/Projects'
 import About from './Components/About'
 import NavBar from './Containers/NavBar'
 
