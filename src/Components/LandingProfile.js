@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { gsap} from 'gsap'
 import { TextPlugin } from 'gsap/all'
+import personal_pic from '../Assets/personal_pic.png'
 
 gsap.registerPlugin(TextPlugin)
 
@@ -38,16 +39,20 @@ function LandingProfile() {
 
 
     return(
-        <div className="landing-profile">
-            <h1><span>Hi, I'm </span></h1>
+        <section className="landing">
+                <img src={personal_pic} alt="profile"/>
+           
+            <div className="landing-profile">
+                <h1><span>Hi, I'm </span></h1>
+                
+                <h1 className="landing-animation">
+                    <span className="box"></span>
+                    <span className="about"></span> 
+                    <span className="cursor">_</span>
+                </h1>
 
-            <h1 className="landing-animation">
-                <span className="box"></span>
-                <span className="about"></span> 
-                <span className="cursor">_</span>
-            </h1>
-
-        </div>
+            </div>
+        </section>
     )
 }
 

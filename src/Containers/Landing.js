@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import { TimelineMax } from 'gsap'
-import personal_pic from '../Assets/personal_pic.png'
 import LandingProfile from '../Components/LandingProfile'
+import personal_pic from '../Assets/personal_pic.png'
 
 
 function Landing() {
@@ -18,13 +18,6 @@ function Landing() {
 
     return(
         <>
-        <main>
-          <section className="landing">
-            <img src={personal_pic} alt="profile"/>
-            <LandingProfile />          
-          </section>
-
-        </main>
         <div className="intro">
           <div className="intro-text"> 
             <h1 className="hide">
@@ -45,7 +38,6 @@ function Landing() {
           </div>
         </div>
         <div className="slider" ref={el => { sliderItem = el }}></div>
-
         </>
     )
 }
