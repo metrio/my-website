@@ -13,11 +13,12 @@ function Contact() {
     }
     
     return(
-        <section className="contact">
-            <h1>Want to talk? Need a Mentor? Need a teammate?</h1>
-            <div>
+        <section className="contact-page">
+            <div className="contact-container">
+                <h1 className="want2chat">Want to talk? Need a Mentor? Need a teammate?</h1>
+                <h1 className="want2chat">Send a Message</h1>
                 { !sent ? <ContactForm hideForm={hideForm} /> : <h4>Thanks for sending an email</h4> }
-            </div> 
+            </div>
             <Footer />
         </section>
         

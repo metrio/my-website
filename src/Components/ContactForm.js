@@ -1,5 +1,10 @@
 import React,{ useState }  from 'react'
 import * as emailjs from 'emailjs-com'
+import EmailIcon from '../Assets/png/email.png'
+import SubjectIcon from '../Assets/png/info.png'
+import MessageIcon from '../Assets/png/message.png'
+import PersonIcon from '../Assets/png/person.png'
+import gsap from 'gsap/gsap-core'
 
 const ContactForm = (props) => {
 
@@ -13,6 +18,7 @@ const ContactForm = (props) => {
     const hideThisForm = (e) => {
         props.hideForm()
     }
+
 
     const handleEmailChange = (e) => {
         e.persist()
@@ -49,16 +55,35 @@ const ContactForm = (props) => {
         <form className="contact-form" onSubmit={(e) => emailSubmit(e)}>
 
             <label>Your Name</label>
-            <input onChange={(e) => handleEmailChange(e)} name="name" type="text" placeholder="Your Name" value={formData.name}/>
+            <span className="input-line">
+                <img src={PersonIcon} alt="person-icon"/>
+                <div className="inputs">
+                    <input onChange={(e) => handleEmailChange(e)}  name="name" type="text"  value={formData.name}/>
+                </div>
+            </span>
 
             <label>Your Email</label>
-            <input onChange={(e) => handleEmailChange(e)} name="email"  type="email" placeholder="your@email.com" value={formData.email} required/>
+            <span className="input-line">
+                <img src={EmailIcon} alt="email-icon"/>
+                <div className="inputs">
+                    <input onChange={(e) => handleEmailChange(e)}  name="email"  type="email"  value={formData.email} required/>
+                </div>
+            </span>
+                    
 
             <label>Subject of Email</label>
-            <input onChange={(e) => handleEmailChange(e)} name="subject" type="text" placeholder="Subject" value={formData.subject}/>
+            <span className="input-line">
+                <img src={SubjectIcon} alt="subject"/>
+                <div className="inputs">
+                    <input onChange={(e) => handleEmailChange(e)} name="subject" type="text"  value={formData.subject}/>
+                </div>
+            </span>
 
             <label>Your Message</label>
-            <textarea onChange={(e) => handleEmailChange(e)} name="message"  type="text-area" placeholder="Please write your message here" value={formData.message} required/>
+            <div className="textbox">
+                <img src={MessageIcon} alt="message"/>
+                <textarea onChange={(e) => handleEmailChange(e)}  name="message"  type="text-area" value={formData.message} required/>
+            </div>
       
 
         <div className="button--container">
