@@ -40,7 +40,7 @@ function LandingProfile() {
 
     return(
         <section className="landing">
-                <img src={personal_pic} alt="profile"/>
+            <img src={personal_pic} alt="profile"/>
            
             <div className="landing-profile">
                 <h1><span>Hi, I'm </span></h1>
