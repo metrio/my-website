@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "project_name": "Oubliettes and Ogres",
+        "img": null,
+        "repo": "https://github.com/metrio/Oubliettes-and-Ogres",
+        "front_repo": null,
+        "back_repo": null,
+        "desc": "My first CLI project in Ruby that is a small adventure for Users to explore a Dungeons and Dragons like scenario",
+        "tech_tags": ["Ruby"],
+        "link": null,
+        "demo_vid": null
+    },  {
+        "id": 2,
+        "project_name": "Restaurant Review",
+        "img": null,
+        "repo": "https://github.com/metrio/Restaurant-Review-App",
+        "front_repo": null,
+        "back_repo": null,
+        "desc": "An App designed to Review Restaurants based on the saftey they had around CoVid-19 and regulations around that, all built using Rails",
+        "tech_tags": ["Ruby", "Rails", "bcrypt", "CSS", "JavaScript"],
+        "link": null,
+        "demo_vid": null
+    },  {
+        "id": 3,
+        "project_name": "Pet Dates",
+        "img": null,
+        "repo": null,
+        "front_repo": "https://github.com/metrio/pet-date-frontend",
+        "back_repo": "https://github.com/metrio/pet-date-backend",
+        "desc": "An App to set up playdates for your Pet Friends, this app was mainly built with JavaScript FrontEnd and Rails BackEnd",
+        "tech_tags": ["Ruby", "Rails", "JavaScript", "CSS", "bcrypt"],
+        "link": null,
+        "demo_vid": null
+    },  {
+        "id": 4,
+        "project_name": "Frued Folds",
+        "img": null,
+        "repo": null,
+        "front_repo": "https://github.com/EpicDoomSir/ff-frontend",
+        "back_repo": "https://github.com/metrio/ff-backend",
+        "desc": "An App to have brain teasing games to push Users' skills in Math, Memorization, and Puzzle solving. (Still a work in progress)",
+        "tech_tags": ["React", "Ruby", "Rails", "Redux", "JavaScript", "CSS"],
+        "link": null,
+        "demo_vid": null
+    },  {
+        "id": 5,
+        "project_name": "RareRecords",
+        "img": null,
+        "repo": "",
+        "front_repo": "https://github.com/metrio/RareRecordsFrontend",
+        "back_repo": "https://github.com/metrio/RareRecordsBackend",
+        "desc": "RareRecords is an app to connect Small Record Shop Businesses with Patrons to make the searching process easier",
+        "tech_tags": ["JavaScript", "React", "Redux", "Ruby", "Rails", "DiscogsAPI"],
+        "link": null,
+        "demo_vid": "https://vimeo.com/manage/videos/514433024"
+    },  {
+        "id": 6,
+        "project_name": "Portfolio Project",
+        "img": null,
+        "repo": "https://github.com/metrio/my-website",
+        "front_repo": null,
+        "back_repo": null,
+        "desc": "My first Portfolio Site with all the knowledge I've accumulated over time in Flatiron and beyond",
+        "tech_tags": ["React", "JavaScript", "GSAP", "CSS"],
+        "link": "www.demetriolima.com",
+        "demo_vid": null
+    }, {
+        "id": 7,
+        "project_name": "Shitty Wine Blog(contribution)",
+        "img": "",
+        "repo": null,
+        "front_repo": null,
+        "back_repo": null,
+        "desc": "Helping my friend bring life to her website and get components to work cleaner and more consistently (currently a work in progress)",
+        "tech_tags": ["Wordpress", "JavaScript", "CSS"],
+        "link": "www.poopyvino.com",
+        "demo_vid": null
+    }
+
+
+
+]
