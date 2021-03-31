@@ -46,7 +46,7 @@
     },  {
         "id": 5,
         "project_name": "RareRecords",
-        "img": null,
+        "img": "https://imgur.com/SAk99qk",
         "repo": "",
         "front_repo": "https://github.com/metrio/RareRecordsFrontend",
         "back_repo": "https://github.com/metrio/RareRecordsBackend",
@@ -57,7 +57,7 @@
     },  {
         "id": 6,
         "project_name": "Portfolio Project",
-        "img": null,
+        "img": "https://imgur.com/fJJFgog",
         "repo": "https://github.com/metrio/my-website",
         "front_repo": null,
         "back_repo": null,
@@ -68,7 +68,7 @@
     }, {
         "id": 7,
         "project_name": "Shitty Wine Blog(contribution)",
-        "img": "",
+        "img": "https://imgur.com/KEw9jgu",
         "repo": null,
         "front_repo": null,
         "back_repo": null,
