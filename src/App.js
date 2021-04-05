@@ -7,6 +7,7 @@ import About from './Components/About'
 import NavBar from './Containers/NavBar'
 import LandingProfile from './Containers/LandingProfile'
 
+
 function App()  {
   
     return(

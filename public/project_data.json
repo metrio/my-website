@@ -2,7 +2,7 @@
     {
         "id": 1,
         "project_name": "Oubliettes and Ogres",
-        "img": null,
+        "img": "https://i.imgur.com/7dm8zcw.png",
         "repo": "https://github.com/metrio/Oubliettes-and-Ogres",
         "front_repo": null,
         "back_repo": null,
@@ -13,7 +13,7 @@
     },  {
         "id": 2,
         "project_name": "Restaurant Review",
-        "img": null,
+        "img": "https://i.imgur.com/Lj5tmOj.png",
         "repo": "https://github.com/metrio/Restaurant-Review-App",
         "front_repo": null,
         "back_repo": null,
@@ -24,7 +24,7 @@
     },  {
         "id": 3,
         "project_name": "Pet Dates",
-        "img": null,
+        "img": "https://imgur.com/rcGpJJh.png",
         "repo": null,
         "front_repo": "https://github.com/metrio/pet-date-frontend",
         "back_repo": "https://github.com/metrio/pet-date-backend",
@@ -35,7 +35,7 @@
     },  {
         "id": 4,
         "project_name": "Frued Folds",
-        "img": null,
+        "img": "https://i.imgur.com/w8KVYdA.png",
         "repo": null,
         "front_repo": "https://github.com/EpicDoomSir/ff-frontend",
         "back_repo": "https://github.com/metrio/ff-backend",
@@ -46,7 +46,7 @@
     },  {
         "id": 5,
         "project_name": "RareRecords",
-        "img": "https://imgur.com/SAk99qk",
+        "img": "https://imgur.com/SAk99qk.png",
         "repo": "",
         "front_repo": "https://github.com/metrio/RareRecordsFrontend",
         "back_repo": "https://github.com/metrio/RareRecordsBackend",
@@ -57,7 +57,7 @@
     },  {
         "id": 6,
         "project_name": "Portfolio Project",
-        "img": "https://imgur.com/fJJFgog",
+        "img": "https://imgur.com/fJJFgog.png",
         "repo": "https://github.com/metrio/my-website",
         "front_repo": null,
         "back_repo": null,
@@ -68,7 +68,7 @@
     }, {
         "id": 7,
         "project_name": "Shitty Wine Blog(contribution)",
-        "img": "https://imgur.com/KEw9jgu",
+        "img": "https://imgur.com/KEw9jgu.png",
         "repo": null,
         "front_repo": null,
         "back_repo": null,
