@@ -274,7 +274,33 @@ footer p {
     overflow-y: scroll;
     overflow: scroll;
   }
+
+  .projects-container{
+    width: 100vw;
+    height: max-content; 
+    flex-direction: column;
+    overflow: scroll;
+    overflow-y: scroll;
+  }
+
+  .projectpage-declare{
+    font-size: 5em;
+    align-self: center;
+    text-align: center;
+  }
+
+  .project-card{
+    width: 90vw;
+    font-size: 2.8em;
+    margin: 1em;
+  }
+
+  .project-card img{
+    min-width: 100%;
+  }
+
 }
+
 
 .contact-form label{
   font-size: 1.8em;
@@ -362,4 +388,32 @@ footer p {
   transition: all 0.3s ease 0s;
 }
 
+.projects-container{
+  width: 100vw;
+  height: 100vh;
+  display: inline-flex;
+  overflow-y: scroll;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
+.project-card{
+  max-width: 90vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  margin: 3em;
+  border: 1px solid rgb(71, 70, 70);
+  border-radius: .5em;  
+}
+
+.project-card img{
+  max-width: 90%;
+  max-height: 40%;
+}
+
+/* .tag {
+
+} */
