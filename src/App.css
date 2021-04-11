@@ -291,8 +291,15 @@ footer p {
 
   .project-card{
     width: 90vw;
-    font-size: 2.8em;
     margin: 1em;
+  }
+
+  .project-card h4{
+    font-size: 1.75em;
+  }
+
+  .project-card li{
+    font-size: 1em;
   }
 
   .project-card img{
@@ -409,6 +416,23 @@ footer p {
   border-radius: .5em;  
 }
 
+.project-card ul{
+  display: inline-flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  justify-content: space-between;
+}
+
+.project-card li{
+ list-style: none;
+ text-decoration: none;
+ background-color: rgba(231, 209, 170, 0.774);
+ padding-left: .3em;
+ padding-right: .3em;
+ border-radius: .5em;
+ margin-left: .2em;
+ margin-bottom: .2em;   
+}
 .project-card img{
   max-width: 90%;
   max-height: 40%;

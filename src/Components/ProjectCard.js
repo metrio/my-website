@@ -1,13 +1,17 @@
 import React from 'react'
 
+
 const ProjectCard = (props) => {
     
     const renderTags = () => {
-        let tags = props.projectObj.tech_tags
+        if(props.projectObj.tech_tags === undefined ){
+            <li>"loading..."</li>
+        } else {
+            props.projectObj.tech_tags.map((tag, index) => 
+                    <li key={index}> {tag} </li>
+            )
+        }
 
-        tags.map(ele => {
-            <li> { ele } </li>
-        })
     }
 
 
@@ -17,6 +21,10 @@ const ProjectCard = (props) => {
             <h4>{props.projectObj.project_name}</h4>
             
             <ul className="tags">
+             { props.projectObj.tech_tags.map((tag, index) => 
+                    <li key={index}> {tag} </li>
+            )}
+
             { renderTags() }
             </ul>
             
