@@ -295,11 +295,11 @@ footer p {
   }
 
   .project-card h4{
-    font-size: 1.75em;
+    font-size: 3.75em;
   }
 
-  .project-card li{
-    font-size: 1em;
+  .tags li{
+    font-size: 1.5em;
   }
 
   .project-card img{
@@ -405,7 +405,7 @@ footer p {
 }
 
 .project-card{
-  max-width: 90vw;
+  width: 30vw;
   height: 50vh;
   justify-content: center;
   align-items: center;
@@ -414,16 +414,19 @@ footer p {
   margin: 3em;
   border: 1px solid rgb(71, 70, 70);
   border-radius: .5em;  
+  overflow-x: hidden;
+  word-wrap: break-word;
+  padding: .5em;
 }
 
-.project-card ul{
+.tags{
   display: inline-flex;
   flex-direction: row;
   overflow-x: scroll;
   justify-content: space-between;
 }
 
-.project-card li{
+.tags li{
  list-style: none;
  text-decoration: none;
  background-color: rgba(231, 209, 170, 0.774);
@@ -433,11 +436,32 @@ footer p {
  margin-left: .2em;
  margin-bottom: .2em;   
 }
+
+.links{
+  width: 90%;
+  font-size: 105%;
+  justify-content: center;
+  text-align: center;
+}
+
+.links a{
+  text-decoration: none;
+  margin-left: .3em;
+  margin-right: .3em;
+}
+
 .project-card img{
   max-width: 90%;
   max-height: 40%;
+  margin-top: .5em;
 }
 
-/* .tag {
-
-} */
+.project-card p {
+  justify-content: center;
+  text-align: center;
+  width: 25vw;
+  height: 10vh;
+  padding-top: .3em;
+  padding-left: 1.6em;
+  padding-bottom: .4em;
+}

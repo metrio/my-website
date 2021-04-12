@@ -47,7 +47,7 @@
         "id": 5,
         "project_name": "RareRecords",
         "img": "https://imgur.com/SAk99qk.png",
-        "repo": "",
+        "repo": null,
         "front_repo": "https://github.com/metrio/RareRecordsFrontend",
         "back_repo": "https://github.com/metrio/RareRecordsBackend",
         "desc": "RareRecords is an app to connect Small Record Shop Businesses with Patrons to make the searching process easier",

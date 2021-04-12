@@ -5,11 +5,22 @@ import ProjectCard from '../Components/ProjectCard'
 function Projects() {
 
 
-    const renderProjectCards = () => [
-        project_data.map(project => 
+    const renderProjectCards = () => {
+        project_data.sort((a, b) => {
+            if(b.id < a.id){
+                return -1
+            } else {
+                return 1
+            }
+        })
+
+
+       return project_data.map(project => 
             <ProjectCard projectObj={project} key={project.id} />
+            
         )
-    ]
+    }
+
     
 
     return(
