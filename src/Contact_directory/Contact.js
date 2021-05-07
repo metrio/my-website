@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './Contact.css'
 import ContactForm from '../Contact_directory/ContactForm'
 import Footer from '../NavBarAndFooter_directory/Footer'
 

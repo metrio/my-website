@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react'
+import './Landing.css'
 import { TimelineMax } from 'gsap'
 
 function LandingAnimation() {

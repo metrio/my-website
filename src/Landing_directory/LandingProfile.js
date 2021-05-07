@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import './Landing.css'
 import { gsap} from 'gsap'
 import { TextPlugin } from 'gsap/all'
 import personal_pic from '../Assets/personal_pic.png'

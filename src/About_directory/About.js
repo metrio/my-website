@@ -1,4 +1,5 @@
 import React from 'react'
+import './About.css'
 import AboutMe from '../Assets/aboutme.png'
 import CPP from "../Assets/TechLogos/CPP.png";
 import CSS from "../Assets/TechLogos/CSS.png";

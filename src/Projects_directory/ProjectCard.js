@@ -5,7 +5,7 @@ function ProjectCard (props){
 
     return(
         <div className="project-card">
-            <img src={props.projectObj.img} />
+            <img src={props.projectObj.img} alt={props.projectObj.project_name}/>
             <h4>{props.projectObj.project_name}</h4>
             
             <ul className="tags">

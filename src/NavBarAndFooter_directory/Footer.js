@@ -1,4 +1,5 @@
 import React from "react";
+import './Bars.css'
 import Codepen from "../Assets/png/codepen.png";
 import Github from "../Assets/png/github.png";
 import LinkedIn from "../Assets/png/linkedin.png";
