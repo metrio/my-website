@@ -1,0 +1,129 @@
+.contact-page{
+    height: 85vh;
+    width: 100vw;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+  }
+  
+  .contact-container{
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+    flex-direction: column;
+    overflow: scroll;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    bottom: 5%;
+  }
+  
+  .want2chat{
+    font-size: 2em;
+    margin-bottom: .2em;
+  }
+  
+  .contact-form {
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+    width: 50%;
+    padding: .9em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4%;
+  }
+  
+  
+  .contact-form label{
+    font-size: 1.8em;
+    position: relative;
+  }
+  
+  .input-line{
+    border-bottom: 2px solid black;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 0.5em;
+    width: 80%;
+  }
+  
+  .input-line img{
+    height: auto;
+    width: 25px;
+    float: left;
+  }
+  
+  .inputs{
+    width: 95%;
+    float: right;
+    height: 100%;
+  }
+  
+  .inputs input{
+    background-color: transparent;
+    text-align: center;
+    font-size: 1.5em;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  .inputs input:focus{
+    border: none;
+    outline: none;
+  }
+  
+  .inputs input:hover{
+    border: none;
+    outline: none;
+  }
+  
+  .textbox{
+    width: 90%;
+  }
+  
+  .textbox img{
+    position: relative;
+    height: 22px;
+    width: 22px;
+    padding-top: .1em;
+    top: 15%;
+    left: 8.7%;
+    float: left;
+  }
+  
+  .textbox textarea{
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    height: 25vh;
+    margin-bottom: .8em;
+    text-indent: 2.2em;
+    font-size: 1.3em;
+    padding-top: .8em;
+    padding-left: .5em;
+    padding-right: .2em;
+    background-color: transparent;
+  }
+  
+  .button--container button{
+    border: none;
+    background-color: transparent;
+    width: 10vw;
+    height: 5vh;
+    font-size: 1.3em;
+  }
+  
+  .button--container button:hover{
+    border: 2px solid black;
+    border-radius: 4%;
+    transition: all 0.3s ease 0s;
+  }

@@ -1,0 +1,88 @@
+.landing { 
+    height: 85vh;
+    width: 100vw;
+    align-content: center;
+    justify-content: center;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    padding: 1.5em 5rem;
+  }
+  
+  .landing img{
+    top: 2vh;
+    height: min-content;
+    min-width: 50%;
+    max-width: 50%;
+    width: 50%;
+    position: sticky;
+    float: left;
+  }
+  
+  .landing-profile{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.75rem;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    float: right;
+    top: 5%;
+    min-width: 50%;
+    max-width: 50%;
+    height: 50%;
+    width: auto;
+  }
+  
+  .landing-animation{
+    font-size: 4.5rem;
+  }
+
+  #logo{
+    font-weight: lighter;
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+  
+  
+  .intro {
+    background: black;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .intro-text {
+    color: rgb(233, 233, 233);
+    font-family: 'Teko', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .slider {
+    background: rgb(170, 154, 130);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+  }
+  
+  .hide{ 
+    background: black;
+    overflow: hidden;
+  }
+  
+  .hide span {
+    transform: translateY(100%);
+    display: inline-block;
+  }

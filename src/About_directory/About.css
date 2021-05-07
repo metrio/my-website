@@ -1,0 +1,28 @@
+#AboutPage{
+    width: 100vw;
+  }
+  
+  #AboutMe{
+    margin-top: 14vh;
+    position: relative;
+    font-size: 2rem;
+    display: inline-block;
+  }
+  
+  #profilepic{
+    height: 40vh;
+    width: 40vw;
+    margin-left: .5em;
+    float: left;
+  }
+  
+  .description{
+    float: right;
+    width: 55%;
+    display: inline-table;
+    justify-content: space-around;
+  }
+  
+  .description p {
+    margin: 0 1.5em 1em;
+  }
