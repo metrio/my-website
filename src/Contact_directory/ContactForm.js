@@ -4,7 +4,6 @@ import EmailIcon from '../Assets/png/email.png'
 import SubjectIcon from '../Assets/png/info.png'
 import MessageIcon from '../Assets/png/message.png'
 import PersonIcon from '../Assets/png/person.png'
-import gsap from 'gsap/gsap-core'
 
 const ContactForm = (props) => {
 

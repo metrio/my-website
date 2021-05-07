@@ -1,12 +1,13 @@
 import React from 'react'
-import project_data from '../project_data.json'
-import ProjectCard from '../Components/ProjectCard'
+import project_data from '../../project_data.json'
+import ProjectCard from './ProjectCard'
 
 function Projects() {
 
 
     const renderProjectCards = () => {
         project_data.sort((a, b) => {
+            // simplify: b.id < a.id ? -1 : 1
             if(b.id < a.id){
                 return -1
             } else {

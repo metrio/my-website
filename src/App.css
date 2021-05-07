@@ -11,6 +11,7 @@
 
 #App{
   min-height: 100vh;
+  max-width: 100%;
   overflow: scroll;
 }
 
@@ -71,7 +72,7 @@ nav {
 
 .nav-bar {
   margin-top: 1.25em;
-  display: inline-flex;
+  /* display: inline-flex; */
   list-style: none;
   text-decoration: none;
 }
@@ -245,7 +246,7 @@ footer p {
   border-radius: 4%;
 }
 
-@media screen and (max-device-width: 800px){
+/* @media screen and (max-device-width: 800px){
   .contact-form {
     width: 80%;
     padding: .5em;
@@ -306,7 +307,7 @@ footer p {
     min-width: 100%;
   }
 
-}
+} */
 
 
 .contact-form label{
@@ -395,29 +396,55 @@ footer p {
   transition: all 0.3s ease 0s;
 }
 
+/* VAR = 1200px */
+/* @media screen and (max-width: VAR) {} */
+/* ^ this means the css will affect anything BELOW that width */
+/* max-width: 1200px => anything under 1200 px */
+
+/* WRITING RESPONSIVE */
+/* @media screen and min-width: (screen width) {} */
+/*  ^ all css affects anything ABOVE screen width */
+/* min-width: 700px => anything above 700px */
+
+
+/* STARTING MOBILE FIRST */
+/* seedling */
 .projects-container{
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   overflow-y: scroll;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .project-card{
-  width: 30vw;
-  height: 50vh;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 0 0 3em 0;
   text-align: center;
   background-color: white;
-  margin: 3em;
   border: 1px solid rgb(71, 70, 70);
   border-radius: .5em;  
   overflow-x: hidden;
   word-wrap: break-word;
   padding: .5em;
 }
+
+/* proper plant */
+@media screen and (min-device-width: 768px) {
+  .projects-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .project-card {
+    width: calc(50% - 3em);
+    height: 500px;
+    margin: 0 1em 3em 0;
+  }
+}
+
 
 .tags{
   display: inline-flex;
@@ -465,3 +492,11 @@ footer p {
   padding-left: 1.6em;
   padding-bottom: .4em;
 }
+
+
+/** 
+Organize my shit,
+NavBar Folder w/ NavBar.js and it's CSS
+Project Folder w/ Projects ...
+Contact Folder w/ Contact ...
+*/

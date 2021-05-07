@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const ProjectCard = (props) => {
+function ProjectCard (props){
 
     return(
         <div className="project-card">

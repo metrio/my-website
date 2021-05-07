@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import ContactForm from '../Components/ContactForm'
-import Footer from '../Components/Footer'
+import ContactForm from '../Contact_directory/ContactForm'
+import Footer from '../NavBarAndFooter_directory/Footer'
 
 function Contact() {
 
