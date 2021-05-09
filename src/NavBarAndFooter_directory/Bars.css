@@ -15,7 +15,7 @@ nav {
   
   .nav-bar {
     margin-top: 1.25em;
-    /* display: inline-flex; */
+    display: inline-flex;
     list-style: none;
     text-decoration: none;
   }
