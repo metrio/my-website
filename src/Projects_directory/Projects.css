@@ -33,21 +33,7 @@
     word-wrap: break-word;
     padding: .5em;
   }
-  
-  /* proper plant */
-  @media screen and (min-device-width: 768px) {
-    .projects-container {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-    .project-card {
-      width: calc(50% - 3em);
-      height: 500px;
-      margin: 0 1em 3em 0;
-    }
-  }
-  
-  
+
   .tags{
     display: inline-flex;
     flex-direction: row;
@@ -94,3 +80,19 @@
     padding-left: 1.6em;
     padding-bottom: .4em;
   }
+  
+  /* proper plant */
+  @media screen and (min-device-width: 768px) {
+    .projects-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .project-card {
+      width: calc(50% - 3em);
+      height: 500px;
+      margin: 0 1em 3em 0;
+    }
+  }
+  
+  
+  

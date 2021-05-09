@@ -76,6 +76,17 @@
         "tech_tags": ["Wordpress", "JavaScript", "CSS"],
         "link": "www.poopyvino.com",
         "demo_vid": null
+    }, {
+        "id": 8,
+        "project_name": "Yum Yum Fresh",
+        "img": "https://i.imgur.com/5QpZGPw.png",
+        "repo": "https://github.com/YumYumFresh",
+        "front_repo": null,
+        "back_repo": null,
+        "desc": "An informational site where users can find local seasonal produce with a simnple visit to the app",
+        "tech_tags": [ "JavaScript", "React", "CSS", "Rails"],
+        "link": "yumyumfresh.com",
+        "demo_vid": null
     }
 
 
