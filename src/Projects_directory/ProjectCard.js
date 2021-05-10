@@ -6,15 +6,7 @@ function ProjectCard (props){
     return(
         <div className="project-card">
             <img src={props.projectObj.img} alt={props.projectObj.project_name}/>
-            <h4>{props.projectObj.project_name}</h4>
             
-            <ul className="tags">
-                { props.projectObj.tech_tags.map((tag, index) => 
-                    <li key={index}> {tag} </li>
-                )}
-
-            </ul>
-
             <ul className="links">
                 {
                     props.projectObj.repo !== null || props.projectObj.front_repo !== null ?
@@ -45,10 +37,20 @@ function ProjectCard (props){
                 }
             </ul>
 
+            <h4>{props.projectObj.project_name}</h4>
+
+            <ul className="tags">
+                { props.projectObj.tech_tags.map((tag, index) => 
+                    <li key={index}> {tag} </li>
+                )}
+
+            </ul>
+
             <p>
                 { props.projectObj.desc }
             </p>
             
+
            
         </div>
     )
