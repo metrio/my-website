@@ -24,7 +24,7 @@
 .project-card {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: [image-start] 50% [image-end] 10% [links] 15% [project-name] 5% [tech-tags] 20% [desc];
+  grid-template-rows: [image-start] 50% [image-end] 10% [links] 12% [project-name] 8% [tech-tags] 20% [desc];
   grid-template-areas:
     [image-start] "image" [image-end]
     [image-end] "links" [links]
@@ -56,6 +56,8 @@
 }
 
 .tags li {
+  align-self: center;
+  font-size: 1.9vh;
   list-style: none;
   text-decoration: none;
   background-color: rgba(231, 209, 170, 0.774);
