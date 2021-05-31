@@ -26,11 +26,6 @@
   }
   
   .contact-form {
-    align-content: center;
-    align-items: center;
-    align-self: center;
-    justify-self: center;
-    display: inline-flex;
     position: relative;
     justify-content: center;
     flex-direction: column;
